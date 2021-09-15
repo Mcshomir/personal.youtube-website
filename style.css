@@ -1,0 +1,49 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color:teal;
+    text-align: center;
+    
+
+
+}
+.navbar-heading h1{
+    color: white;
+}
+.navbar .navbar-logo img{
+    width: 70px;
+}
+.navbar-menu a{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    
+
+}
+.navbar a{
+    display: block;
+   
+}
+.navbar a:hover{
+    background-color:steelblue;
+}
+
+
+
+
+
+
+
+
+
+
+
