@@ -1,45 +1,253 @@
 
-*{
+
+/* responsive */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* end responsive   */ 
+ 
+ 
+ *{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 body{
     margin: 0;
     padding: 0;
 }
+/* header design start here */
 .navbar{
     background-color:teal;
     text-align: center;
-    
-
 
 }
-.navbar-heading h1{
+.navbar img{
+    width: 100px;
+}
+h1{
+   
     color: white;
+    text-align: center;
+
 }
-.navbar .navbar-logo img{
-    width: 70px;
+
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: upercase;
+
 }
 .navbar-menu a{
+    background-color:seagreen;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px; 20px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+
+}
+.navbar-menu a:hover{
+    background-color: gray;
+    text-decoration: underline;
+}
+
+
+[class*="col-"]{
+    float: left; 
+    padding: 10px;
+}
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* header design end here */
+/* profile design start form here */
+.profile h1{
+    color: gray;
+    font-family: 'Dancing Script', cursive;
+}
+.profile p{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin: 40px;
+}
+.top-img{
+    width: 200px;
+    margin-left: 700px;
+    margin-top: 20px;
+   transition: transform 2s;
+
+}
+.top-img:hover{
+    transform: rotate(360deg);
+}
+.bottom-img{
+    width: 200px;
+    margin-left: 70px;
+    transition: transform 2s;
+}
+.bottom-img:hover{
+    transform: rotate(360deg);
+}
+/* profile design end from here */
+ /* about me desing start from here */
+ .about{
+     background-color: teal;
+     text-align: center;
+     color: white;
+ }
+ .about h2{
+     margin-top: 20px;
+     color: white;
+   text-align: center;
+   padding-top: 20px;
+
+ }
+ .dotted-line{
+     width: 100px;
+     border: dotted 1px white;
+     
+
+
+ }
+.button{
+    background-color:seagreen;
+    border-radius: 10px;
+    border: 2px solid violet;
     padding: 10px 20px;
     font-size: 20px;
     color: white;
-    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:violet;
+}
+
+ .images img{
+     width: 200px;
+ }
+ /* about design end here */
+ /* professonal design start here */
+ .prfessional-experience{
+     box-sizing: border-box;
+ }
+ .card{
+     padding: 10px;
+     border-radius: 5px;
+     background-color:turquoise;
+     border: 2px solid black;
+     padding: 4px;
     
+     
 
+ }
+ .card:hover{
+     box-shadow: 1px 2px 3px 4px pink;
+ }
+ .work-img{
+     width: 220px;
+     height: 200px;
+     border-radius: 50%;
+     border: 2 px solid gray;
+     margin: 0 auto;
+     display: block;
+     
+
+ }
+ .work-logo{
+     margin: 0 auto;
+ }
+ .title h2{
+     text-align: center;
+ }
+ /* professonal design end here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*about design start form here */
+/* .about-me{
+    background-color:teal;
 }
-.navbar a{
+.about-me h2{
+    text-align: center;
+    color: white;
+ 
+}
+.images .about-picture{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-   
+
 }
-.navbar a:hover{
-    background-color:steelblue;
+.about-describe p{
+    text-align: center;
 }
 
+.dotted-hr{
+    margin: 20px;
+    color: white;
+}
+.button{
+    background-color:seagreen;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.dotted{
+    width: 70px;
+    color: white;
+    margin: 0 auto;
+    border: dotted;
+    border-bottom: none;
+    margin-bottom: 20px;
+    
+}
+about me design end here */
 
 
-
+ 
 
 
 

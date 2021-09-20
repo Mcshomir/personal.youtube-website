@@ -1,9 +1,124 @@
-body{
-    background-color: green;
+
+
+/* responsive */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* end responsive   */
+
+
+/* header design start here */
+.navbar-logo{
+    text-align: left;
+
+}
+.navbar-heading h1{
+    text-align: right;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    margin: 30px 20px;
+    color: white;
+    background-color: transparent;
+}
+/* header design end here */
+
+/* profile design start here */
+.top-img{
+    margin-left: 1530px;
+    margin-top: 40px;
+    transition: transform 3s;
+}
+.top-img:hover{
+    transform: rotate(360deg);
+}
+.profile-describe p{
+    padding: 30px;
+    margin: 20px;
+}
+.bottom-img{
+    margin-top: 20px;
+    transition: transform 3s;
+
+}
+.bottom-img:hover{
+    transform: rotate(360deg);
+}
+/* profile design end from here */
+/* about design start here */
+.about::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.images{
+    width: 50%;
+    float: left;
+}
+.about-describe{
+width: 50%;
+float: left;
+color: white;
+text-align: left;
+
+}
+.images img{
+    width: 400px;
+    margin-top: 40px;
+}
+
+/* about design end here */
+/* professonal design start here */
+
+/* professonal design end here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+
+   
+   
     
 }
+*{
+    box-sizing: border-box;
+}
  /* For desktop: */
- .col-1 {width: 8.33%;}
+ /* .col-1 {width: 8.33%;}
  .col-2 {width: 16.66%;}
  .col-3 {width: 25%;}
  .col-4 {width: 33.33%;}
@@ -15,12 +130,12 @@ body{
  .col-10 {width: 83.33%;}
  .col-11 {width: 91.66%;}
  .col-12 {width: 100%;}
- 
+  */
 
  
-/* header area start */
-.navbar{
-    display: flex;
+/* header area start
+.navbar{ */
+    /* display: flex;
     background-color:teal;
   
 }
@@ -43,10 +158,44 @@ body{
 }
  a:hover{
     text-decoration: underline;
+  
 }
 .navbar-menu{
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
-}
+} */
 /* header area end */
+
+
+/* profile design from here */
+/* .profile-describe h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+/* .top-png{ */
+    /* width: 176px;
+    margin-left: 1603px;
+}
+.bottom-png{
+    margin-left: 200px;
+    width: 200px;
+}
+.profile-describe p{
+    padding: 40px;
+    color: gray; */
+    /* font-size:15px; */
+/* } */
+/* profile design end here */
+
+/* about me design start here */
+/* .about-me{
+    background-color:teal;
+}
+
+.col-6{
+    float: left;
+}
+
+/* about ke sesign end here */ */ */
