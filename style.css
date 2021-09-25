@@ -23,7 +23,7 @@
 }
 
 body{
-    margin: 0;
+         margin: 0;
     padding: 0;
 }
 /* header design start here */
@@ -147,8 +147,15 @@ h1{
  }
  /* about design end here */
  /* professonal design start here */
- .prfessional-experience{
-     box-sizing: border-box;
+ .card h2{
+     color: white;
+
+ }
+ }
+ .prfessional-experience::after{
+    clear: both;
+    display: table;
+    content: '';
  }
  .card{
      padding: 10px;
@@ -156,6 +163,8 @@ h1{
      background-color:turquoise;
      border: 2px solid black;
      padding: 4px;
+     height: 700px;
+     box-sizing: border-box;
     
      
 
@@ -179,72 +188,218 @@ h1{
  .title h2{
      text-align: center;
  }
- /* professonal design end here*/
+ .describe-skill li{
+     list-style: none;
+     text-transform: upercase;
+     font-family: tahoma;
+     font-weight: bold;
+     position: relative;
+     margin: 30px 20px;
+     
+ }
+ .describe-skill li::before{
+     content: '';
+     position: absolute;
+     background-color:sienna;
+     top: calc(100% + 15px);
+     width: 100%;
+     height: 10px;
+     border-radius: 1000px;
+    left:0;
+ }
+ .describe-skill li::after{
+     content: '';
+     position: absolute;
+     top: calc(100% + 15px);
+     width: 0%;
+     height: 10px;
+     background-color: red;
 
+     border-radius: 1000px;
+     left: 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*about design start form here */
-/* .about-me{
-    background-color:teal;
-}
-.about-me h2{
-    text-align: center;
-    color: white;
+     animation-duration: 5s;
+     animation-timing-function: linear;
+     animation-fill-mode: forwards;
+     animation-delay: 2s;
+     animation-iteration-count: infinite;
+ }
  
+ .describe-skill li.html::after{
+     animation-name: html;
+ }
+@keyframes html{
+    to{
+        width: 90%;
+    }
 }
-.images .about-picture{
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.describe-skill li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
 
+ .describe-skill li.bootstrap::after{
+     animation-name: bootstrap;
+ } @keyframes bootstrap{
+     to{
+         width: 70%;
+     }
+ } 
+ .describe-skill li.js::after{
+     animation-name:
+ }
+.describe-skill li.js::after{
+    animation-name: js;
 }
-.about-describe p{
-    text-align: center;
+@keyframes js{
+    to{
+        width: 60%;
+    }
 }
-
-.dotted-hr{
-    margin: 20px;
-    color: white;
+.describe-skill li.jquery::after{
+    animation-name: jquery;
 }
-.button{
-    background-color:seagreen;
-    font-size: 20px;
-    border-radius: 10px;
-    color: white;
-    font-weight: 30px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-.dotted{
-    width: 70px;
-    color: white;
-    margin: 0 auto;
-    border: dotted;
-    border-bottom: none;
-    margin-bottom: 20px;
+@keyframes jquery{
+    to{
+        width: 50%;
+    }
     
 }
-about me design end here */
+.describe-skill li.react::after{
+    animation-name: react;
+    
+}
+@keyframes react{
+    to{
+        width: 40%;
+    }
+}
+.describe-skill li.node::after{
+    animation-name: node;
+}
+@keyframes node{
+    to{
+        width: 30%;
+    }
+}
+.describe-skill li.exprese::after{
+    animation-name: exprese;
+}
+@keyframes exprese{
+    to{
+        width: 20%;
+    }
+}
+ /* professonal design end here*/
+/* achievement-content start from here */
+.achievment-contact{
+   margin: 5px;
+}
+.achievment-middle{
+    color: white;
+    background-color:teal;
+    margin: 5px;
+    border: 2px solid black;
+}
+.achievment-middle::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.achievment-middle h2{
+    text-align: center;
+    color: white;
+}
+.contact{
+  
+    text-align: center;
+
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border:none;
+    border-radius: 10px;
+    resize: none;
+}
+.contact button{
+    width: 100px;
+    padding: 20px 20px
+    
+    test-color: white; 
+    background-color: gray;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+}
+.contact button:hover{
+    border: 2px solid yellowgreen;
+}
+/* achivment-contact start from here */
+
+.contact-links{
+    text-align: center;
+}
+.btn{
+    width: 60px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+.btn:hover{
+    background-color: gray;
+    border: 1px solid white;
+}
+/* achivment-contant end here */
+/* footer design start from here */
+.footer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer{
+   background-color: black;
+
+}
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+.footer-menu a:hover{
+    text-decoration: underline;
+}
+.footer-des p{
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+}
+/* footer design end from here */
+
+
+
+
+
+
+
+
+
+
 
 
  
