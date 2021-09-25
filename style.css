@@ -299,18 +299,18 @@ h1{
 .achievment-contact{
    margin: 5px;
 }
-.achievment-middle{
+.achievment-contact{
     color: white;
     background-color:teal;
     margin: 5px;
     border: 2px solid black;
 }
-.achievment-middle::after{
+.achievment-contact::after{
     content: '';
     display: table;
     clear: both;
 }
-.achievment-middle h2{
+.achievment-contact h2{
     text-align: center;
     color: white;
 }
